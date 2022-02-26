@@ -120,6 +120,8 @@ footer a{
 a:hover{
     color:#000000;
 }
+
+
 @media (min-width: 330px) {
     .teclas button{
         width: 25px;
