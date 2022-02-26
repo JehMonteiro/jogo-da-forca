@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;
+    background-color: #f4f3f1;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#imagem{
+    margin-top: 30px;
+    background-image: url("../img/forca.png");
+    width: 234px;
+    height: 272px;
+    background-repeat: no-repeat;
+}
+
+#palavra-secreta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+.letras{
+    width:16px;
+    text-align: center;
+    border-bottom: 3px solid #252525;
+    color: #252525;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+#teclado{
+    margin-top: 30px;
+
+}
+
+.teclas button{
+    width: 22px;
+    height: 22px;
+    margin: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px dimgray;
+    border-radius: 3px;
+    border: 1px solid dimgray;
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    font-weight: 500;
+}
+
+.teclas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#btnReiniciar{
+    width: calc(40% + 5px);
+    height: auto; 
+}
+
+.teclas button:hover{
+    transform: scale(1.2);
+}
+
+.teclas button:disabled{
+    cursor: not-allowed;
+
+}
+
+#categoria{
+    margin-top: 30px;
+    color: #252525;
+    font-size:1.0em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    
+
+}
+
+footer{
+    position: absolute; 
+    bottom:0;
+    width:100%;
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover{
+    color:#000000;
+}
+@media (min-width: 330px) {
+    .teclas button{
+        width: 25px;
+        height: 25px;
+    }
+    #categoria{
+        font-size:1.2em;
+    
+    }
+}
+
+@media (min-width: 375px) {
+    .teclas button{
+        width: 27px;
+        height: 27px;
+    }
+    #categoria{
+        font-size:1.2em;
+    
+    }
+}
+
+@media (min-width: 769px) {
+    .teclas button{
+        width: 30px;
+        height: 30px;
+    }
+    #categoria{
+        font-size:1.5em;
+    
+    }
+}

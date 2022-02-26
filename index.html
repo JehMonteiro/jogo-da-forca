@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/forca.css" media="screen" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8895696174595970"
+     crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+<body>
+    <div class="container" >
+        <div id="imagem">
+            
+        </div>
+        <div id="palavra-secreta">
+            <!-- <div class="letras">Q</div>
+            <div class="letras">W</div>
+            <div class="letras">E</div>
+            <div class="letras">R</div>
+            <div class="letras">T</div>
+            <div class="letras">Y</div>
+            <div class="letras">U</div>
+            <div class="letras">I</div>
+            <div class="letras">O</div>
+            <div class="letras">P</div> -->
+
+        </div>
+        <div id="teclado">
+            <div class="teclas teclas-q-p">
+                <button id="tecla-Q" onclick="verificaLetraEscolhida('Q')">Q</button>
+                <button id="tecla-W" onclick="verificaLetraEscolhida('W')">W</button>
+                <button id="tecla-E" onclick="verificaLetraEscolhida('E')">E</button>
+                <button id="tecla-T" onclick="verificaLetraEscolhida('T')">T</button>
+                <button id="tecla-R" onclick="verificaLetraEscolhida('R')">R</button>
+                <button id="tecla-Y" onclick="verificaLetraEscolhida('Y')">Y</button>
+                <button id="tecla-U" onclick="verificaLetraEscolhida('U')">U</button>
+                <button id="tecla-I" onclick="verificaLetraEscolhida('I')">I</button>
+                <button id="tecla-O" onclick="verificaLetraEscolhida('O')">O</button>
+                <button id="tecla-P" onclick="verificaLetraEscolhida('P')">P</button>
+            </div>
+            <div class="teclas teclas-a-l">
+                <button id="tecla-A" onclick="verificaLetraEscolhida('A')">A</button>
+                <button id="tecla-S" onclick="verificaLetraEscolhida('S')">S</button>
+                <button id="tecla-D" onclick="verificaLetraEscolhida('D')">D</button>
+                <button id="tecla-F" onclick="verificaLetraEscolhida('F')">F</button>
+                <button id="tecla-G" onclick="verificaLetraEscolhida('G')">G</button>
+                <button id="tecla-H" onclick="verificaLetraEscolhida('H')">H</button>
+                <button id="tecla-J" onclick="verificaLetraEscolhida('J')">J</button>
+                <button id="tecla-K" onclick="verificaLetraEscolhida('K')">K</button>
+                <button id="tecla-L" onclick="verificaLetraEscolhida('L')">L</button>
+            </div>
+            <div class="teclas teclas-z-m">
+                <button id="tecla-Z" onclick="verificaLetraEscolhida('Z')">Z</button>
+                <button id="tecla-X" onclick="verificaLetraEscolhida('X')">X</button>
+                <button id="tecla-C" onclick="verificaLetraEscolhida('C')">C</button>
+                <button id="tecla-V" onclick="verificaLetraEscolhida('V')">V</button>
+                <button id="tecla-B" onclick="verificaLetraEscolhida('B')">B</button>
+                <button id="tecla-N" onclick="verificaLetraEscolhida('N')">N</button>
+                <button id="tecla-M" onclick="verificaLetraEscolhida('M')">M</button>
+                <button id="btnReiniciar">REINICIAR</button>
+
+            </div>
+        </div>
+        <div id="categoria">
+            <!-- CATEGORIA -->
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="my-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                </div>
+                <div class="modal-body" id="modalbody"></div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="btnReinicia">Fechar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+                
+        <!-- fim Modal -->
+
+    </div>
+    <script src="js/forca.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <footer>GitHub <a href="https://github.com/JehMonteiro">Jessica Monteiro Bueno</a></footer>
+</body>
+</html>
